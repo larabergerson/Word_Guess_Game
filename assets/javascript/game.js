@@ -31,22 +31,25 @@ answer.innerHTML = blanks.join(" ");
 
 // trying to get to the point where I understand what to do here. I want the 3 of available guesses left to decrement after the user releases the key. 
 var guesses = 10
-var guessesLeft = guesses--
-for (var i = 10; i >= 0; i--){
+for (var i = 10; i >= 1; i--){
 }
 document.getElementById("left")
 
 var left = document.getElementById("left");
-left.innerHTML = guessesLeft 
+left.innerHTML = guesses
     
 // for (var j = 10; j > 0; j--){
 //     document.getElementById("left");     
 //     }
-console.log (guessesLeft);
+console.log (guesses);
 
 // Letters guessed section: I want the doc to log the user input here. The letters chosen.I want to pull the index value to the html.
+
+function myFunction(){
+    var x = document.getElementById ("letters");
+}
 var lettersGuessed = " "
-    document.onkeyup
+input 
 
 var lettersRandom = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","Z"];
 
