@@ -29,26 +29,32 @@ var answer = document.getElementById("word");
 console.log (answer)
 answer.innerHTML = blanks.join(" ");
 
-
-var guessesLeft: 10;
-var i;
-for (var i=10; i > 10; i--) {
-    getElementById("left");
-    
+// trying to get to the point where I understand what to do here. I want the 3 of available guesses left to decrement after the user releases the key. 
+var guesses = 10
+var guessesLeft = guesses--
+for (var i = 10; i >= 0; i--){
 }
-// if the numbGuesses is greater than 0 then decrement from 10 until you get to 0.
+document.getElementById("left")
 
+var left = document.getElementById("left");
+left.innerHTML = guessesLeft 
+    
+// for (var j = 10; j > 0; j--){
+//     document.getElementById("left");     
+//     }
+console.log (guessesLeft);
 
-
-// array for letter guessed
-var lettersGuessed = ["a", "b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","Z"];
+// Letters guessed section: I want the doc to log the user input here. The letters chosen.I want to pull the index value to the html.
+var lettersGuessed = " "
+    document.onkeyup
 
 var lettersRandom = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","Z"];
 
-
+// Here I want to increment the # of wins by 1 if the user successfully guesses the character before his/her tries expires. if the user wins the value increments.
+var win = " "
   
-
-
+// Here I want to increment the value on the html by 1 if the user fails to discover the character name.
+var lose
 // var answers = [];
 // for (var i=0; i < guess.length; i++){
 //     ansewrs[i] = "_";

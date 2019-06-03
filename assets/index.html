@@ -13,23 +13,21 @@
 <h2>Guess the GOT character</h2>
 
 <body>
-    <!-- script start tages for Java Script -->
-        <!-- add extermal scrtip via <script src____> -->
 
 <!-- 
 // Structure of page should look like this for the use
 //     blanks for leters in word
 //     Number of guesses available that decreases with each guess
 //     >Letters that have been guessed 
-<!- Number of Wins - Words solved correctly -->
- <!-- Number of Losses - Words solved incorrectly -->
+<!- Number of Wins - increments-->
+ <!-- Number of Losses - increments -->
 
 <div class = "container"> 
     <h4>Answer: <span id="word"></span></h4>
     <h4>Number of guesses left: <span id="left"></span></h4>
-    <h4>Letters guessed:</h4>
-    <h4>Wins:</h4>
-    <h4>Losses:</h4>
+    <h4>Letters guessed: <span id ="letters"></span></h4>
+    <h4>Wins: <span id = "wins"></span></h4>
+    <h4>Losses: <span id = "loss"></span></h4> 
 </div>
 
 
@@ -37,7 +35,7 @@
 <!-- functionality and flow of whole game -->
              <!-- START GAME: -->
              <!-- generate random word (math.random) from array -->                 <!-- have blanks correspond to # of letters in that randomly generated word word via varvalue.length-->
-                     <!-- need loop to pull from an array and push data to page -->             <!--Checking letters with true/false (if/else) function -->
+                     <!-- need loop to pull from an array and push data to page -->             <!--Checking letters with true/false (if/else) function?? -->
                 <!-- if letter is true push letter to blank and reduce # of available guesses to continue-->
                  <!-- else laeve blank empty, reduce # of available guesses and push letter to "letters guessed" array -->
              <!-- END GAME: -->
