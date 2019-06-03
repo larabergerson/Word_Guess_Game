@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./reset.css">
-    <link rel= "stylesheet" type= "text/css" href= "style.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+    <link rel= "stylesheet" type= "text/css" href= "../assets/css/style.css"> 
     <title>Word Guess Game</title>
+   
 </head>
 <!-- Instructions: Guess a Letter -->
 <h2>Guess the GOT character</h2>
@@ -14,8 +15,6 @@
 <body>
     <!-- script start tages for Java Script -->
         <!-- add extermal scrtip via <script src____> -->
-<script type = "text/javascript" src = "./assets/javascript/game.js"> </script>
-
 
 <!-- 
 // Structure of page should look like this for the use
@@ -26,13 +25,15 @@
  <!-- Number of Losses - Words solved incorrectly -->
 
 <div class = "container"> 
-    <h4>Answer: </h4>
-    <h4>Number of guesses left: </h4>
+    <h4>Answer: <span id="word"></span></h4>
+    <h4>Number of guesses left: <span id="left"></span></h4>
     <h4>Letters guessed:</h4>
     <h4>Wins:</h4>
     <h4>Losses:</h4>
 </div>
 
+
+ 
 <!-- functionality and flow of whole game -->
              <!-- START GAME: -->
              <!-- generate random word (math.random) from array -->                 <!-- have blanks correspond to # of letters in that randomly generated word word via varvalue.length-->
@@ -53,7 +54,7 @@
 <!-- game start function -->
              <!-- responds to user pressing letter on release (onkeyup) -->
              <!-- takes letter and puts it in a var array of used letters  -->
-             <!-- once number of allotted guesses have been used game alerts user to win or try again and rgame resets -->
+             <!-- once number of allotted guesses have been used game alerts user to win or try again and game resets -->
 
 
 
@@ -83,5 +84,6 @@
 
 <!-- //     script tag end --> 
 
+<script type="text/javascript" src="../assets/javascript/game.js"></script>
 </body>
 </html>
